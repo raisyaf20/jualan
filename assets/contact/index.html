@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+      integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>jualan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="../../index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-house"></span>
+            <span class="text">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../product/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-cart-shopping"></span>
+            <span class="text">product</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../category/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-bars"></span>
+            <span class="text">category</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">
+            <span class="icon fa-sharp fa-solid fa-phone"></span>
+            <span class="text">contact</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- end header -->
+    <div class="wa" onclick="chat()">
+      <p>Kami akan bantu</p>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+    <!-- konten -->
+    <main>
+      <div class="container">
+        <h2 class="title">Contact <span>for business</span></h2>
+        <div class="row">
+          <div class="col">
+            <form action="">
+              <label for="">Name</label>
+              <input type="text" required /> <br />
+              <label for="">Email</label>
+              <input type="text" required /> <br />
+              <label for="">perihal</label>
+              <input type="text" required /> <br />
+              <button type="submit" onclick="send()">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end konten -->
+
+    <!-- footer -->
+    <!-- <footer>
+      <p>Copyright <span id="year"></span>. Jualan</p>
+    </footer> -->
+    <!-- end footer -->
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+
+      function chat() {
+        const pesan = `Halo min saya butuh kamu`;
+        const whatsapp = `https://wa.me/6282125614453?text=${pesan}`;
+        open(whatsapp, "_blank");
+      }
+
+      function send() {
+        alert("Terima kasih telah menghubingi");
+        window.location.assign("../../index.html");
+      }
+    </script>
+  </body>
+</html>

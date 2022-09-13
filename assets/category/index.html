@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+      integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CATEGORY || JUALAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="../../index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-house"></span>
+            <span class="text">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../product/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-cart-shopping"></span>
+            <span class="text">product</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">
+            <span class="icon fa-sharp fa-solid fa-bars"></span>
+            <span class="text">category</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="../contact/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-phone"></span>
+            <span class="text">contact</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- end header -->
+
+    <div class="wa" onclick="chat()">
+      <p>Kami akan bantu</p>
+      <i class="fa-brands fa-whatsapp"></i>
+    </div>
+
+    <!-- konten -->
+    <main>
+      <div class="container">
+        <h2 class="title">Category</h2>
+        <div class="row">
+          <div class="col">
+            <div class="logo-cat">
+              <img src="../img/aero-removebg-preview.png" alt="" />
+            </div>
+            <p>Sepatu</p>
+          </div>
+          <div class="col">
+            <div class="logo-cat">
+              <img src="../img/aero_tshirt.png" alt="" />
+            </div>
+            <p>Baju</p>
+          </div>
+          <div class="col">
+            <div class="logo-cat">
+              <img src="../img/furniture.png" alt="" />
+            </div>
+            <p>Furniture</p>
+          </div>
+        </div>
+        <h2 class="title" style="margin-top: 20px">Shoes</h2>
+        <section class="row">
+          <div class="baris">
+            <img src="../img/product-10.jpg" alt="" />
+            <h5>Sport Hrx</h5>
+          </div>
+          <div class="baris dll" onclick="pop()">
+            <h4>
+              Lihat lebih banyak <i class="fa fa-arrow-down"></i>
+              <i class="fa fa-arrow-up"></i>
+            </h4>
+          </div>
+        </section>
+        <h2 class="title" style="margin-top: 20px">Jam Tangan</h2>
+        <section class="row">
+          <div class="col-1">
+            <img src="../img/jam2.png" alt="" />
+            <h4 class="jam">SERI APPLE WATCH</h4>
+          </div>
+          <div class="baris dll">
+            <h4 class="">
+              Lihat lebih banyak <i class="fa fa-arrow-down"></i>
+              <i class="fa fa-arrow-up"></i>
+            </h4>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- end konten -->
+
+    <!-- footer -->
+    <!-- <footer>
+      <p>Copyright <span id="year"></span>. Jualan</p>
+    </footer> -->
+    <!-- end footer -->
+
+    <script type="text/javascript">
+      function buy(nm_product) {
+        const mesagge = `halo saya mau memesan ${nm_product}`;
+        const whatsApp = `https://wa.me/083818561039?text=${nm_product}`;
+        location.href = whatsapp;
+      }
+
+      function chat() {
+        const pesan = `Halo min saya butuh kamu`;
+        const whatsapp = `https://wa.me/6282125614453?text=${pesan}`;
+        open(whatsapp, "_blank");
+      }
+
+      function pop() {
+        console.log("123");
+      }
+    </script>
+  </body>
+</html>

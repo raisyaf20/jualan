@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+      integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>jualan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">
+            <span class="icon fa-sharp fa-solid fa-house"></span>
+            <span class="text">home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="assets/product/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-cart-shopping"></span>
+            <span class="text">product</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="assets/category/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-bars"></span>
+            <span class="text">category</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="assets/contact/index.html" class="nav-link">
+            <span class="icon fa-sharp fa-solid fa-phone"></span>
+            <span class="text">contact</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- end header -->
+
+    <!-- konten -->
+    <main>
+      <div class="container">
+        <h2 class="title">Jualan</h2>
+        <div class="row">
+          <div class="col">
+            <img src="assets/img/banner-preview.png" alt="" />
+            <h3>SELAMAT DATANG DI</h3>
+            <a href="assets/product/index.html">
+              Yuk lihat kita jual anda
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end konten -->
+
+    <!-- footer -->
+    <footer>
+      <div class="left">
+        <img src="assets/img/logo.png" alt="" />
+      </div>
+      <p>copyright <span id="year"></span>. JUALAN GAJELAS</p>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+
+      function buy(nm_product) {
+        const mesagge = `halo saya mau memesan ${nm_product}`;
+        const whatsApp = `https://wa.me/083818561039?text=${nm_product}`;
+        location.href = whatsapp;
+      }
+    </script>
+  </body>
+</html>

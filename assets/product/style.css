@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAVBAR */
+header {
+  width: 80%;
+  height: 60px;
+  margin: 0 auto;
+  z-index: 9;
+}
+.nav-list {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  /* background-color: salmon; */
+  background-color: aliceblue;
+}
+.nav-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.nav-link:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.active {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: salmon;
+  opacity: 1;
+}
+
+.icon {
+  display: none !important;
+}
+/* END NAVBAR */
+
+/* CONTENT */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: salmon;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 14px;
+  margin: 20px;
+  min-width: 200px;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 7px;
+  box-shadow: -3px -3px 5px rgba(105, 104, 104, 0.5);
+  cursor: pointer;
+}
+
+.col img {
+  width: 100%;
+}
+/* CONTENT */
+
+/* footer */
+footer {
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-2 {
+  flex-basis: 8%;
+  padding: 10px;
+  color: white;
+}
+.col-2 p {
+  font-size: 1.2em;
+}
+/* end footer */
+
+/* logo whatsapp */
+.wa {
+  /* background-color: black; */
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  font-size: 2.5em;
+  color: #075e54;
+  cursor: pointer;
+  text-align: center;
+}
+.wa p {
+  font-size: 14px;
+  background-color: rgb(206, 205, 205);
+  /* display: none; */
+  padding: 5px;
+  border-radius: 5px;
+}
+/* end logo whatsapp */
+
+/* RESPONSIVE BREAKPOINT */
+@media (max-width: 487px) {
+  header {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 1px;
+    padding: 9px;
+    background-color: white;
+  }
+  .icon {
+    display: block !important;
+    font-size: 1.3em;
+    padding: 3px;
+  }
+
+  .nav-link {
+    transition: 0.4s;
+  }
+  .nav-link:hover {
+    transform: translateY(-5px);
+  }
+  .text {
+    display: none;
+  }
+  .col {
+    text-align: center;
+    flex-basis: 80%;
+    /* margin-bottom: -20px; */
+  }
+
+  footer {
+    height: 116px;
+  }
+  footer .col-2 {
+    flex-basis: 200px;
+    align-self: flex-start;
+  }
+
+  .wa {
+    bottom: 117px;
+  }
+  .wa i {
+    font-size: 1.1em;
+  }
+}
