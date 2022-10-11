@@ -111,7 +111,7 @@ header {
 
 /* footer */
 footer {
-  height: 70px;
+  height: 60px;
   background-color: black;
   display: flex;
   /* justify-content: space-evenly; */
@@ -124,7 +124,7 @@ footer p {
 }
 
 .left {
-  flex-basis: 5%;
+  flex-basis: 3.5%;
 }
 
 /* end footer */
